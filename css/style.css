@@ -9,7 +9,14 @@
 	overflow: hidden;
 }
 
-body {
+/*body {
 	background-color: gray;
-} 
+} */
 
+nav {
+	display: flex;
+}
+a:hover,
+a:focus {
+	background:#ee5b33;
+}

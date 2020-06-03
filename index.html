@@ -32,7 +32,7 @@
 				<p>г.Санкт-Петербург, ул. Конюшенная, д. 19/8 </p>
 			</div>
 			<div>
-				<img src="img/icon-login.svg" width="20" height="17" alt="Войти">
+				<button><img src="img/icon-login.svg" width="20" height="17" alt="Войти"></button>
 				<a href="blank.html">Войти</a>
 				<a href="blank.html">Регистрация</a>
 			</div>
@@ -151,19 +151,50 @@
 					<h4>сервисы</h4>
 					<p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
 					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+                    <button>Доставка</button>
+                    <button>Гарантия</button>
+                    <button>Кредит</button>
+
 					<div>
-						<article id="Доставка" Доставка></article>
-						<h4>доставка</h4>
+						<article id="Доставка">
+                            <h4>доставка</h4>
 							<p>Мы с удовольствием доставим ваш товар прямо</p>
 							<p>к вашему подъезду совершенно бесплатно!</p>
 							<p>Ведь мы не плохо заработаем</p>
 							<p>поднимая его на ваш этаж!</p>
-
-						<button>Доставка</button>
-						<button>Гарантия</button>
-						<button>Кредит</button>
 						<img src="img/Layer-1311.png" width="468" height="261" alt="Доставка">
-					</div>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article id="Гарантия" class="visually-hidden">
+                            <h4>Гарантия</h4>
+                            <p>Если купленный у нас товар поломается или заискрит,</p>
+                            <p>а также в случае пожара, спровоцированного его</p>
+                            <p>возгоранием, вы всегда можете быть уверены в нашей</p>
+                            <p>гарантии. Мы обменяем сгоревший товар на новый.</p>
+                            <p>Дом уж восстановите как-нибудь сами.</p>
+                        <img src="img/guarantee.png" width="389" height="283" alt="Гарантия">
+                        </article>
+                    </div>
+
+
+                    <div>
+                        <article id="Кредит" class="visually-hidden">
+                            <h4>Кредит</h4>
+                            <p>Залезть в долговую яму стало проще!</p>
+                            <p>Кредитные консультанты придут вам на помощь.</p>
+                            <img src="img/credit.png" width="465" height="285" alt="Кредит">
+                                <div class="credit">
+                                    <a href="blank.html">ОТПРАВИТЬ ЗАЯВКУ
+                                </div>
+                        </article>
+                    </div>
+
+
+
+
 				</article>
 	
 			<section>
@@ -183,6 +214,7 @@
 					</ul>
 					<a href="blank.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
 				</article>
+
 				<article>
 					<h4>Контакты</h4>
 					<p>Вы можете забрать товар сами,</p>
@@ -191,6 +223,27 @@
 						<img src="img/maps5.png" width="300" height="158" alt="Карта">
 					</a>
 					<a href="blank.html">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+
+                  <div class="writeme">
+                     <form action="https://echo.htmlacademy.ru" method="post">
+
+                         <label>Ваше имя:
+                             <input type="text" name="">
+                         </label>
+
+                         <label>Ваш e-mail:
+                             <input type="email" name="">
+                         </label>
+
+                         <label>Текст письма:
+                             <textarea placeholder="В произвольной форме"></textarea>
+                         </label>
+
+                         <input type="submit" value="ОТПРАВИТЬ">
+                     </form>
+                 </div>
+
+
 				</article>
 			</section>
 		</main>

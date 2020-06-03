@@ -25,8 +25,9 @@
         <p>Интернет-магазин</p>
         <p>строительных материалов</p>
         <p>и инструментов для ремонта</p>
-      </div>
+      </div> 
       <div>
+        <img src="img/icon-phone.svg" width="19" height="19" alt="телефон">
         <p>+7 (812) 555-05-55</p>
         <p>г.Санкт-Петербург, ул. Конюшенная, д. 19/8 </p>
       </div>
@@ -69,16 +70,32 @@
 
       <section> <!-- Основной блок фильтра по представленному товару-->
 
-        <form action=""> 
+        <form action="https://echo.htmlacademy.ru" method="post" oninput="max1.value=price.value">
           <p>фильтр</p>
+
+
+          <label name="price" alf="Выбор цены">
           <span>цена</span>
-          <img src="img/filter-button.svg" width="20" height="22" alt="Ползунок левый">
-          <img src="img/Layer-152.svg" width="152" height="2"alt="Фильтр цены">
-          <img src="img/filter-button.svg" width="20" height="22" alt="Ползунок правый">
-        </form>
+
+            <input type="range" name="price" min="0" max="33000" value="30000">
+
+            <div>
+             <output name="min1"></output>
+            </div>
+
+            <div>
+             <output name="max1"></output>
+            </div>
+          </label>    
+
+<!--           <img src="img/filter-button.svg" width="20" height="22" alt="Ползунок левый">
 
 
-        <form action="">
+<img src="img/Layer-152.svg" width="152" height="2"alt="Фильтр цены">
+<img src="img/filter-button.svg" width="20" height="22" alt="Ползунок правый">-->
+
+
+
           <p><b>ПРОИЗВОДИТЕЛИ:</b></p> <!-- Должно быть через <lable>-->
           <img src="img/checkbox-on.svg" width="23" height="23">
           <p><input type="checkbox" name="a" value="" checked>BOSCH</p>
@@ -90,19 +107,22 @@
           <p><input type="checkbox" name="a" value=""> DEWATT</p>
           <img src="img/checkbox-off.svg" width="23" height="23">
           <p><input type="checkbox" name="a" value=""> HITACHI</p>
-        </form>
 
 
-        <form action="">
+
+
           <p><b>ПИТАНИЕ:</b></p>
           <img src="img/radio-on.png" width="25" height="25">
           <p><input name="1" type="radio" value="1">АККУМУЛЯТОРНЫЕ</p>
           <img src="img/radio-off.png" width="25" height="25">
           <p><input name="1" type="radio" value="2">СЕТЕВЫЕ</p>
-        </form> 
 
-        <button>Показать</button>
-    
+
+
+         <input type="submit" value="ПОКАЗАТЬ" alt="Кнопка ПОКАЗАТЬ">        
+
+
+        </form>    
       </section>
 
       <section> <!--сортировка товаров-->
@@ -141,13 +161,21 @@
 
 
           <li>    
-            <button>КУПИТЬ</button> <!--"На модальное окно с сообщением о добавлении в корзину"-->
+            <button>КУПИТЬ<img scr="img/icon-cart.svg" width="15" height="15" alt="Купить"></button> <!--"На модальное окно с сообщением о добавлении в корзину"-->
             <button>В ЗАКЛАДКИ</button>
             <h2>Перфоратор BOSCH</h2>
             <h2>BFG 6000</h2>
             <span>30500 P.</span>
             <button>25500 р.</button> 
           </li>
+
+            <!-- окно в корзину -->
+           <div class="cart">
+             <img src="img/Shape1.svg">
+             <p>Товар добавлен в корзину</p>
+             <button>ОФОРМИТЬ ЗАКАЗ</button> 
+             <button>ПРОДОЛЖИТЬ ПОКУПКИ</button> 
+            </div>
 
 
           <li>    
