@@ -5,6 +5,9 @@
     <meta name="keywords" content="Инструменты, материалы, стройка,интернет-магазин">
     <meta name="description" content="Интернет-магазин строительных материалов">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -46,26 +49,30 @@
  </main>
 
 <footer>
-      <div> <!-- Картинка-логотип будет cделана с помощью css-->
+<footer-top>
+      <div> 
         <img src="img/logo.svg" width="" height="" alt="Логотип Техномарт">
       </div>
-      <div> 
+      <div class ="adress"> 
         <p>г.Санкт-Петербург, ул. Конюшенная, д. 19/8</p>
         <p>+7 (812) 555-05-55</p>
       </div>
-      <ul>
+      <ul class="nav-footer-1">
         <li><a href="blank.html">Компания</a></li>
         <li><a href="blank.html">Новости</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="blank.html">Доставка</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
-      <ul>
+      <ul class="nav-footer-2">
         <li><a href="blank.html">Материалы</a></li>
         <li><a href="blank.html">Техника</a></li>
         <li><a href="catalog.html">Инструмент</a></li>
         <li><a href="blank.html">Спецпредложения</a></li>
       </ul>
+    </footer-top>
+
+    <footer-bottom>
       <div>
         <p>2010-2019 Компания Техномарт</p>
         <p>Все права защищены.</p>
@@ -77,10 +84,12 @@
         <div>
           <p>Обратная связь:</p>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        
           <p>Разработано - </p>
           <a href="https://htmlacademy.ru">htmlacademy.ru</a>
         </div>
       </div>
+    </footer-bottom>
     </footer>
   </body>
 </html>
