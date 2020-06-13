@@ -19,12 +19,14 @@ a:focus {
 
 
 @font-face {
-	font-family: 'PT Sans', 'Cuprum', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	src: url('ptsans.woff2') format(woff2),
 		 url('ptsans.woff') format(woff),
 		 url('ptsansbold.woff2') format(woff2),
-		 url('ptsansbold.woff') format(woff),
-		 url('cuprum.woff2') format(woff2),
+		 url('ptsansbold.woff') format(woff);
+
+	font-family: 'Cuprum', sans-serif;
+	src: url('cuprum.woff2') format(woff2),
 		 url('cuprum.woff') format(woff),
 		 url('cuprumbold.woff2') format(woff2),
 		 url('cuprumbold.woff') format(woff),
@@ -51,6 +53,7 @@ a:focus {
 	--gray-light: #A9A9A9;
 	--white: #FFF;
 	--red-light: #EE3643;
+	--red-click: #BA2732;
 	--pink-light: #F7F3EC;
 	--blue-light: #F1F5F7;
 	--basik-gray-icon: #212A3A;
@@ -61,6 +64,13 @@ a:focus {
 	--border: #eaeaea;
 	--basic-header: #F3F7F9;
 
+	--font-size-s: 14px;
+	--font-size-m: 18px;
+	--font-size-l: 21px;
+
+	--line-height-s: 18px;
+	--line-height-m: 24px;
+	--line-height-l: 30px;
 }
 
 /*global*/
@@ -69,11 +79,11 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "PT sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: var(--font-size-s);
+	line-height: var(--line-height-m);
 	font-weight: 400;
 	color: var(--gray);
-	background-color: var(--white);
+	background-color: var(--gray-home);
 }
 
 img {
@@ -92,8 +102,8 @@ header {
 }
 
 .navigation {
-	font-size: 18px;
-	line-height: 24px;
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
 	color: var(--white);
 	background-color: var(--gray-dark); 
 }
@@ -116,21 +126,21 @@ header {
 	background: var(--white-gray);
 	border: 3px solid var(--white);
 	font-weight: bold;
-	font-size: 21px;
-	line-height: 30px;
+	font-size: var(--font-size-l);
+	line-height: var(--line-height-l);
 	color: var(--red-light);
 }
 
 
 .t-adress {
-	font-size: 14px;
-	line-height: 24px;
+	font-size: var(--font-size-s);
+	line-height: var(--line-height-m);
 	align-items: center;
 	color: var(--gray);
 }
 
 .login {
-	font-size: 21px;
+	font-size: var(--font-size-l);
 	line-height: 21px;
 	align-items: center;
 	color: var(--black);
@@ -143,7 +153,7 @@ header {
 	font-family: Cuprum;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 21px;
+	font-size: var(--font-size-l);
 	line-height: 21px;
 	border: none;
 	display: flex;
@@ -159,25 +169,23 @@ header {
 	height: 45px;
 	background-color: var(--white);
 	font-family: Cuprum;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 21px;
+	font-size: var(--font-size-l);
 	line-height: 21px;
 	border: none;
-	display: flex;
 	align-items: center;
 	text-align: center;	
 }
 .enter a {
 	color: var(--black);
 }
+
 /* main-navigation*/
 
 .main-navigation {
 	width: 940px;
 	height: 60px;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
     align-items: center;
 	color: var(--white);
 	background-color: var(--gray);
@@ -192,34 +200,90 @@ header {
 	color: var(--white);
 }
 /*Service, index-column*/
+
+h2 {
+	font-family: Cuprum;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: var(--line-height-l);
+	color: var(--white);
+}
+
+h3 {
+	font-family: Cuprum;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	align-items: center;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+
 h4 {
 	font-family: Cuprum;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 30px;
-	line-height: 30px;
+	line-height: var(--line-height-l);
 	text-transform: uppercase;
 	color: var(--black);
 }
 
 h5 {
-	font-family: PT Sans;
-	font-style: normal;
 	font-weight: bold;
-	font-size: 18px;
-	line-height: 20px;inline
+	font-size: var(--font-size-m);
+	line-height: 20px;
 	align-items: center;
 	text-align: center;
 	color: var(--black);
-
 }
+
+h6 {
+	font-family: Cuprum;
+	font-size: var(--font-size-s);
+	line-height: var(line-height-s);
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+h6 a {
+	color: var(--white);
+}
+
+/*Gallery*/
+.theme a {
+	font-family: Cuprum;
+	font-style: normal;
+	font-weight: normal;
+	font-size: var(--font-size-s);
+	line-height: var(--line-height-s);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: var (--white);
+}
+
+.gallery {
+	background-color: image url(*../img/Layer-99.jpg);
+}
+
+.gallery p {
+	font-family: Cuprum;
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
+	color: var(--white);
+}
+
+
  .service p,
  .index-column p {
  	font-family: PT Sans;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
-	line-height: 24px;
+	line-height: var(--line-height-m);
 	color: var(--black);
  }
 
@@ -233,11 +297,50 @@ h5 {
 
 .transport {
 	font-family: Cuprum;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
 	color: var(--black);
+	list-style: none;
+}
+
+
+.service {
+	font-family: 'PT Sans', sans-serif;
+}
+
+/*Button*/
+.button {
+	font: inherit;
+	text-align: center;
+	color: var(--white);
+	vertical-align: middle;
+	background-color: var(--red-light);
+	text-decoration: uppercase;
+	border: none;
+}
+
+.button: hover,
+.button: focus,
+.button:active {
+	background-color: var(--red-click);
+}
+
+.button.disabled,
+.button:disabled {
+	cursor: default;
+	opacity: 0.5;
+	background-color: var(--disable);
+}
+
+.product,
+.maker, 
+.catalog {
+	background-color: var(--red-light);
+	width: 192px;
+	height: 38px;	
+}
+
+.manufacturer li {
 	list-style: none;
 }
 
@@ -259,8 +362,8 @@ h5 {
 	font-style: normal;
 	font-weight: normal;
 	display: flex;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: var(--font-size-s);
+	line-height: var(--line-height-s);
 	align-items: center;
 	text-align: center;
 	text-transform: uppercase;
@@ -271,32 +374,6 @@ h5 {
 	color: var(---white);
 }
 
-.service {
-	font-family: 'PT Sans', sans-serif;
-}
-
-/*Button*/
-.button {
-	font: inherit;
-	text-align: center;
-	color: var(--black);
-	vertical-align: middle;
-	background-color: var(--white);
-	border: none;
-}
-
-.button: hover,
-.button: focus,
-.button: active {
-	background-color: var(--active);
-}
-
-.button.disabled,
-.button:disabled {
-	cursor: default;
-	opacity: 0.5;
-	background-color: var(--disable);
-}
 
 .perf {
 	background-color: var(--white-gray);
@@ -307,7 +384,7 @@ h5 {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: var(--line-height-s);
 	align-items: center;
 	text-transform: uppercase;
 	color: var(--black);
@@ -336,12 +413,19 @@ h5 {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
-	line-height: 18px;
+	line-height: var(--line-height-s);
 	align-items: center;
 	text-align: center;
 	text-decoration-line: line-through;
 	text-transform: uppercase;
 	color: var(--gray-light);
+}
+.catalog-item-in-list {
+	list-style: none;
+}
+
+.catalog-item-in-list-selected {
+	list-style: none;
 }
 
 .button-card {
@@ -353,7 +437,7 @@ h5 {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
-	line-height: 18px;
+	line-height: var(--line-height-s);
 	align-items: center;
 	text-align: center;
 	text-transform: uppercase;
@@ -370,7 +454,6 @@ h5 {
 .filter {
 	font-family: PT Sans;
 	font-style: normal;
-
 	align-items: center;
 	text-transform: uppercase;
 	color: var(-black);
@@ -378,7 +461,7 @@ h5 {
 
 .filter span {
 	font-size: 17px;
-	line-height: 30px;
+	line-height: var(--line-height-l);
 	font-weight: bold;
 }
 
@@ -389,7 +472,7 @@ h5 {
 	color: var(--black);
 }
 
-footer-top {
+.footer-top {
 	background-color: var(--gray);
 	font-family: Cuprum;
 	font-style: normal;
@@ -400,15 +483,15 @@ footer-top {
 }	
 .adress {
 	font-family: Cuprum;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
 	color: var(--basic-header);
 }
 
 .nav-footer-1 {
 	font-family: Cuprum;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
 	color: var(--blue-light);
 }
 
@@ -422,8 +505,8 @@ footer-top {
 
 .nav-footer-2 {
 	font-family: Cuprum;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
 	color: var(--special-yellow);
 }
 
@@ -435,7 +518,7 @@ footer-top {
 	color: var(--white);
 }
 
-footer-bottom {
+.footer-bottom {
 	background-color: var(--gray-dark);
 	font-family: Cuprum;
 	font-style: normal;
@@ -445,16 +528,16 @@ footer-bottom {
 	text-align: center;		
 }
 
-footer-bottom p{
+.footer-bottom p{
 	font-family: Cuprum;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: var(--line-height-s);
 	color: var(--white);
 }
 
-footer-bottom a {
+.footer-bottom a {
 	font-family: Cuprum;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: var(--line-height-s);
 	color: var(--special-yellow);
 }
