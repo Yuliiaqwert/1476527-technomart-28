@@ -63,6 +63,7 @@ a:focus {
 	--active: #ff0000;
 	--border: #eaeaea;
 	--basic-header: #F3F7F9;
+	--background-image: #.../img/icon-left.svg;
 
 	--font-size-s: 14px;
 	--font-size-m: 18px;
@@ -275,7 +276,6 @@ h6 a {
 	line-height: var(--line-height-m);
 	color: var(--white);
 }
-
 
  .service p,
  .index-column p {
