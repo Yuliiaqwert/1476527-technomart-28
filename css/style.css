@@ -142,14 +142,6 @@ header {
 	color: var(--gray);
 }
 
-
-
-
-
-
-
-
-
 .login {
 	font-size: var(--font-size-l);
 	line-height: 21px;
@@ -340,13 +332,13 @@ h6 a {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.arrow_back {
+.arrow-back {
 	position: absolute;
 	top: 122px;
 	left: 24px;
 }
 
-.arrow_forward {
+.arrow-forward {
 	position: absolute;
 	top: 122px;
 	left: 578px;
@@ -375,6 +367,9 @@ h6 a {
 	top: -22px;
 	left: 45px;
 }
+.catalog a:hover {
+	background-color: var(--red-light);
+}
 
 .materials,
 .tools,
@@ -386,9 +381,6 @@ h6 a {
 }
 
 .materials {
-	/*position: relative;
-	left: 124px;
-	top: 399px;*/
 	background-color: var(--orange);
 }
 
@@ -408,14 +400,9 @@ h6 a {
 	align-items: center;
 	text-align: center;
 	text-transform: uppercase;
+	color: var(--white);
 }
 
-.materials-2 a,
-.tools-2 a,
-.technics-2 a,
-.discounts-2 a,
-.delivery-2 a {
-	color: var(--white);
 }
 
 .materials-2 a:hover,
@@ -443,26 +430,18 @@ h6 a {
 	left: 23px; 
 }
 .tools {
-	/*left: 770px;
-	top: 379px;*/
 	background-color: var(--bluе);
 }
 
 .technics {
-	/*left: 450px;
-	top: 379px;*/
 	background-color: var(--violet);
 }
 
 .discounts {
-	/*left: 770px;
-	top: 522px;*/
 	background-color: var(--salat);	
 }
 
 .delivery {
-	/*left: 770px;
-	top: 665px;*/
 	background-color: var(--orange-light);	
 }
 
@@ -704,10 +683,6 @@ h6 a {
 .next a {
 	color: var(--black);
 }
-
-/*.number-1 a:hover {
-	border: 1px solid var(--greylight);
-	background-color: var(--white);*/
 
 .nav-footer-1 {
 	font-family: Cuprum;
