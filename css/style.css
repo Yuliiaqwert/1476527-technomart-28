@@ -370,6 +370,12 @@ h6 a {
 .catalog a:hover {
 	background-color: var(--red-light);
 }
+.catalog a:active {
+	background-color: var(--red-click);
+}
+.catalog:active {
+	background-color: var(--red-click);
+}
 
 .materials,
 .tools,
@@ -391,9 +397,9 @@ h6 a {
 .delivery-2 a { 
 	width: 135px;
 	height: 38px;
-	background-color: var(--white);
-	mix-blend-mode: normal;
-	opacity: 0.3;
+	background-color: rgba(0, 0, 0, 0.3);
+	/*mix-blend-mode: normal;
+	opacity: 0.3;*/
 	font-family: Cuprum;
 	font-size: var(--font-size-s);
 	line-height: 18px;
@@ -403,7 +409,6 @@ h6 a {
 	color: var(--white);
 }
 
-}
 
 .materials-2 a:hover,
 .tools-2 a:hover, 
@@ -424,11 +429,43 @@ h6 a {
 	mix-blend-mode: normal;
 	opacity: 0.3;
 }
+
+
+/*
+.materials-2 a {
+width: 135px;
+	height: 38px;
+	background-color: rgba(0, 0, 0, 0.3);
+
+	font-family: Cuprum;
+	font-size: var(--font-size-s);
+	line-height: 18px;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white);
+}	
+
+div.materials-1 {
+	position: relative;
+}
 .materials-2 {
 	position: absolute;
 	top: 64px;
-	left: 23px; 
+	left: 23px;
 }
+h2.materials {
+	padding-top: 20px;
+	padding-left: 23px;
+}
+.materials-1 img {
+	position: absolute;
+	top: 31px;
+	left: 213px;
+}
+*/
+
+
 .tools {
 	background-color: var(--bluе);
 }
@@ -668,7 +705,6 @@ h6 a {
 	font-family: PT Sans;
 	font-size: 13px;
 	line-height: 18px;
-	align-items: center;
 	text-align: center;
 }
 
