@@ -85,42 +85,86 @@
               <h4>ПЕРФОРАТОРЫ</h4>
             </div>
             <section class="filter"> <!-- Основной блок фильтра по представленному товару-->
-            
+            <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" oninput="max1.value=price.value">
             <p>фильтр</p>
             <label name="price" alf="Выбор цены">
               <span>цена</span>
-              <form action="https://echo.htmlacademy.ru" method="post" oninput="max1.value=price.value">
-                <input type="range" name="price" min="0" max="33000" value="30000"></form>
-                <div class="min1">
-                  <output name="min1"></output>
+
+
+
+
+
+                <div class="filtform">
+
+                <input type="range" name="price" min="0" max="33000" value="30000">
+
+
+              </div>
+
+                <div class="out1">
+                  <output name="min1">0</output>
                   
                   <img src="img/—.svg">
-                  <output name="max1"></output>
+                    
+                  <output name="max1">30000</output>
                 </div>
               </label>
+
               <hr>
-              <div class="w"><span>ПРОИЗВОДИТЕЛИ:</span>
-              
-              <img src="img/checkbox-on.svg" width="23" height="23">
-              <input type="checkbox" name="a" value="" checked>BOSCH
-              <img src="img/checkbox-off.svg" width="23" height="23">
-              <input type="checkbox" name="a" value=""> ИНТЕРСКОЛ
-              <img src="img/checkbox-on.svg" width="23" height="23">
-              <input type="checkbox" name="a" value="" checked>MAKITA
-              <img src="img/checkbox-off.svg" width="23" height="23">
-              <input type="checkbox" name="a" value=""> DEWATT
-              <img src="img/checkbox-off.svg" width="23" height="23">
-              <input type="checkbox" name="a" value=""> HITACHI
-              <span>ПИТАНИЕ:</span>
-              <img src="img/radio-on.png" width="25" height="25">
-              <input name="1" type="radio" value="1">АККУМУЛЯТОРНЫЕ
-              <img src="img/radio-off.png" width="25" height="25">
-              <input name="1" type="radio" value="2">СЕТЕВЫЕ
-              <input type="submit" value="ПОКАЗАТЬ" alt="Кнопка ПОКАЗАТЬ">
+
+              <div class="w">
+                <span>ПРОИЗВОДИТЕЛИ:</span>
+
+
+              <ul class="list-firm">
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" name="firm1" id="ch1" value="Bosch" checked>
+                  <label for="ch1">Bosch</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" name="firm2" id="ch2" value="Интерскол">
+                  <label for="ch2">Интерскол</label> 
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" name="firm3" id="ch3" value="Makita" checked>
+                  <label for="ch3">Makita</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" name="firm4" id="ch4" value="Dewalt">
+                  <label for="ch4">Dewalt</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input type="checkbox" name="firm5" id="ch5" value="Hitachi">
+                  <label for="ch5">Hitachi</label>
+                </li>
+              </ul>
+
+<hr>
+
+<span>Питание:</span>
+
+
+              <ul class="list-supply">
+                <li>
+                  <input type="radio" name="supply" id="rd1" value="accumulator" checked>
+                  <label for="rd1">Аккумуляторные</label>
+                  <input type="radio" name="supply" id="rd2" value="lan">
+                  <label for="rd2">Сетевые</label>
+                </li>
+              </ul>
+
             </div>
+
+<button type="submit" class="btn_flt">Показать</button>
           </form>
           
         </section>
+
+
+
+
+
+
         <section class="catalog-list-1">
           <section class="sort">
             
