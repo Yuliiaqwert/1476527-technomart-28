@@ -530,6 +530,19 @@ h6 a {
 	height: 266px;
 }
 
+.gallery-2 {
+	background-image: url(../img/Layer-100.jpg);
+	width: 620px;
+	height: 266px;
+}
+.next-gallery-1 {
+	background-image: url(../img/Layer-99-2.jpg);
+	width: 620px;
+	height: 266px;
+	
+	outline: 1px solid red;
+}
+
 .gallery-box {
 	position: absolute;
 	width: 620px;
