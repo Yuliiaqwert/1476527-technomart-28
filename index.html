@@ -5,18 +5,17 @@
 		<meta name="keywords" content="Инструменты, материалы, стройка,интернет-магазин">
 		<meta name="description" content="Интернет-магазин строительных материалов">
 		<title>HTML Academy: Техномарт</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-		<!-- <link href="normalize.css" rel="stylesheet"> -->
-		<!-- <link href="style.css" rel="stylesheet"> -->
+		
 	</head>
 	<body>
 		
 		<header class="begin">
 			<div class="nav-all">
 				<div class="navigation">
-					<div class="logo">
-					ТEХНОМАРТ</div>
+					<div class="logo">ТEХНОМАРТ</div>
 					<div class="search">
 						<img src="img/icon-search.svg" width="17" height="17" alt="Поиск">
 						<span>Поиск:</span></div>
@@ -33,21 +32,19 @@
 						<div class="header-top">
 							
 							<div class="internet-shop">
-								<p>Интернет-магазин<br>
-									строительных материалов<br>
-								и инструментов для ремонта</p>
+								<p>Интернет-магазин</p>
+								<p>строительных материалов</p>
+								<p>и инструментов для ремонта</p>
 							</div>
 							
 							<div class="telefon">
 								<img src="img/icon-phone.svg" width="19" height="19" alt="телефон">
-								<span><a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a></span>
+								<a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
 								<p class="t-address">г.Санкт-Петербург, ул. Конюшенная, д. 19/8 </p>
 							</div>
 							<a class="login" href="blank.html"> Войти</a>
 
-
 							<a class="reg" href="blank.html">Регистрация</a>
-
 
 						</div>
 						
@@ -128,15 +125,14 @@
 						</section>
 						<section class="catalog-list">
 							<div class="top-catalog-list">
-								<h4>Популярные товары</h4>
+								<h4>Популярные товары:</h4>
 								
 								
 								<h6><a class="product btn" href="blank.html">все популярные товары</a></h6>
 								
 							</div>
-							<ul>
-								<div class="top-catalog-list-2">
-									<li  class="catalog-item-in-list">
+							<ul class="top-catalog-list-2">
+									<li  class="catalog-item">
 										<div class="image"><img src="img/9000.jpg" width="184" hieght="164"alt="Перфоратор BOSCH BFG 9000"></div>
 										<div class="card-bottom">
 											<h5>Перфоратор BOSCH<br>
@@ -145,7 +141,7 @@
 											<button class="button-card btn">25500 р.</button> <!--"На страницу товара"-->
 										</div>
 									</li>
-									<li  class="catalog-item-in-list">
+									<li  class="catalog-item">
 										<div class="image"><img src="img/3000.jpg" width="127" hieght="112" alt="Перфоратор BOSCH BFG 3000"></div>
 										<div class="card-bottom">
 											<h5>Перфоратор BOSCH<br>
@@ -154,36 +150,33 @@
 											<button class="button-card btn">15500 р.</button> <!--"На страницу товара"-->
 										</div>
 									</li>
-									<li  class="catalog-item-in-list">
+									<li  class="catalog-item">
 										<div class="image"><img src="img/6000.jpg" width="184" hieght="164" alt="Перфоратор BOSCH BFG 9000"></div>
 										<div class="card-bottom">
 											<h5>Перфоратор BOSCH<br>
 											BFG 6000</h5>
 											<span>30500 р.</span>
-											<button class="button-card btn">25500 р.</button> <!--"На страницу товара"-->
+											<button class="button-card btn">25500 р.</button> 
 										</div>
 									</li>
-									<li  class="catalog-item-in-list">
+									<li  class="catalog-item">
 										<div class="image"><img src="img/2000.jpg" width="127" hieght="112" alt="Перфоратор BOSCH BFG 2000"></div>
 										<div class="card-bottom">
 											<h5>Перфоратор BOSCH<br>
 											BFG 9000</h5>
-											<button class="button-card btn">12500 р.</button> <!--"На страницу товара"-->
+											<button class="button-card btn">12500 р.</button> 
 										</div>
 									</li>
-								</div>
 							</ul>
 						</section>
+
 						<section class="manufacturer">
 							<div class="top-catalog-list">
-								<h4>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h4>
-								
-								
-								<h6><a class="product btn" href="blank.html">все производители</a></h6>
-								
+								<h4>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h4>
+								<h6><a class="product btn" href="blank.html">все производители</a></h6>	
 							</div>
-							<ul>
-								<div class="top-catalog-list-3">
+
+							<ul class="top-catalog-list-3">
 									<li><img src="img/bosch.png" width="126" height="37"></li>
 									<li><img src="img/makita.png" width="123" height="40"></li>
 									<li><img src="img/dewalt.png" width="146" height="44"></li>
@@ -192,56 +185,55 @@
 									<li><img src="img/lg.png" width="121" height="73"></li>
 									<li><img src="img/aeg.png" width="151" height="96"></li>
 									<li><img src="img/metabo.png" width="204" height="69"></li>
-								</div>
 							</ul>
+
 						</section>
-						<section class="service"> <!--Сервисы-->
-						<div class="service-left">
-							<h4>сервисы</h4>
-							<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-							Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-						</div>
-						<input type="radio" id="kn1" class="knop1" name="toggle" checked>
-						<input type="radio" id="kn2" class="knop2" name="toggle">
-						<input type="radio" id="kn3" class="knop3" name="toggle">
-						<div class="toggle">
-							<label for="kn1">Доставка</label>
-							<label for="kn2">Гарантия</label>
-							<label for="kn3">Кредит</label>
-						</div>
+						<section class="service">
+							<div class="service-left">
+								<h4>сервисы</h4>
+								<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+								Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+							</div>
+
+							<input type="radio" id="kn1" class="knop1" name="toggle" checked>
+							<input type="radio" id="kn2" class="knop2" name="toggle">
+							<input type="radio" id="kn3" class="knop3" name="toggle">
+
+							<div class="toggle">
+								<label for="kn1">Доставка</label>
+								<label for="kn2">Гарантия</label>
+								<label for="kn3">Кредит</label>
+							</div>
 						
-						<div class="service-right">
-							<div class="ser_kn button-delivery">
-								<h4>Доставка</h4>
-								<p>
+							<div class="service-right">
+								<div class="tab button-delivery">
+									<h4>Доставка</h4>
+									<p>
 									Мы с удовольствием доставим ваш товар прямо<br>
 									к вашему подъезду совершенно бесплатно!<br>
-									
 									Ведь мы неплохо заработаем,<br>
-									поднимая его на ваш на этаж!
-								</p>
-							</div>
-							<div class="ser_kn garant">
-								<h4>Гарантия</h4>
-								<p>
+									поднимая его на ваш на этаж!</p>
+								</div>
+								<div class="tab garant">
+									<h4>Гарантия</h4>
+									<p>
 									Если купленный у нас товар поломается или заискрит,<br>
 									а также в случае пожара, спровоцированного его возгоранием,<br>
 									вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
 									сгоревший товар на новый. <br>
 									Дом уж восстановите как-нибудь сами.
-								</p>
-							</div>
-							<div class="ser_kn credit">
-								<h4>Кредит</h4>
-								<p>
+									</p>
+								</div>
+								<div class="tab credit">
+									<h4>Кредит</h4>
+									<p>
 									Залезть в долговую яму стало еще проще!<br>
 									Кредитные консультанты придут вам на помощь.<br><br>
 									
 									<a class="credit-btn btn" href="credit.html">Отправить заявку</a></p>
 								</div>
 							</div>
-							
-							
+								
 						</section>
 						
 						<section class="index-column">
@@ -249,9 +241,8 @@
 								<h4>Компания техномарт</h4>
 								<p>Настоящий мужской шоппинг начинает здесь! Огромный выбор товаров для ремонта <br>
 									и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.<br>
-									<br>
 									Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-								Техномарт работает со многими транспортными компаниями:</p>
+									Техномарт работает со многими транспортными компаниями:</p>
 								<ul class="transport">
 									<li>Деловые линии</li>
 									<li>Автотрейдинг</li>
@@ -264,35 +255,15 @@
 								<h4>Контакты</h4>
 								<p>Вы можете забрать товар сами,<br>
 								заехав в наш офис:</p>
-								<p></p>
+								
 								<a href="https://www.google.ru/maps" title="Карта">
 									<img src="img/maps5.png" width="300" height="158" alt="Карта">
 								</a>
+	
+								<h6><a class="write-us btn" href="blank.html">заблудились? напишите нам!</a>
+								</h6>
 								
-								<p></p>
-								
-								
-								
-								<h6><a class="write-us btn" href="blank.html">заблудились? напишите нам!</a></h6>
-								
-								<!-- <div class="writeme">
-										<form action="https://echo.htmlacademy.ru" method="post">
-												
-												<label>Ваше имя:
-														<input type="text" name="">
-												</label>
-												
-												<label>Ваш e-mail:
-														<input type="email" name="">
-												</label>
-												
-												<label>Текст письма:
-														<textarea placeholder="В произвольной форме"></textarea>
-												</label>
-												
-												<input type="submit" value="ОТПРАВИТЬ">
-										</form>
-								</div> -->
+			
 							</article>
 						</section>
 					</main>
@@ -327,9 +298,9 @@
 								<p>Все права защищены.</p>
 							</div>
 							<div class="end-2">
-								<div class="fon"><img src="img/icon-vk.svg" width="25.05" height="14.06" alt="Мы ВКонтакте"></div>
-								<div class="fon"><img src="img/icon-fb.svg" width="12" height="22" alt="Мы в Facebook"></div>
-								<div class="fon"><img src="img/icon-insta.svg" width="21" height="21" alt="Мы в Instagram"></div>
+								<div class="social-item"><img src="img/icon-vk.svg" width="25.05" height="14.06" alt="Мы ВКонтакте"></div>
+								<div class="social-item"><img src="img/icon-fb.svg" width="12" height="22" alt="Мы в Facebook"></div>
+								<div class="social-item"><img src="img/icon-insta.svg" width="21" height="21" alt="Мы в Instagram"></div>
 							</div>
 							<div class="end-3">
 								<div><p>Обратная связь:</p>
@@ -342,5 +313,67 @@
 				</div>
 				
 			</footer>
+
+<!-- модальные окна -->
+
+<!--     <div class="modal-add modal-write">
+   	<button class="modal-close" type="button"></button>
+
+
+          <div class="icon">
+          	<img src="img/icon-mark.svg">
+      
+        <span> Товар добавлен в корзину!</span></div>
+
+     <div class="add-button">
+       <a class="button-pay btn" href="#ordering">Оформить заказ</a>
+       <a class="button-next btn-nonactive" href="#">Продолжить Покупки</a>
+     </div>
+        </div> -->
+
+
+<!-- <div class="modal-write">
+	 	<button class="modal-close" type="button"></button>
+        <form class="write-us1" action="#" method="post">
+        	
+
+        		<label>
+        			<span>Ваше имя:</span><br>
+        			<input type="text" name="login" placeholder="Имя, фамилия">
+        	
+        		</label>
+
+        		<label>
+        			<span>Ваш e-mail:</span><br>
+        			<input type="text" name="email" placeholder="email@example.com"> 
+        		</label>
+
+        		<label><span>Текст письма:</span>
+        		
+        		
+        		        		<textarea name="textletter" cols="10" rows="6" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea> 
+        		</label>
+        	
+
+
+        	<div class="form-btn">
+        		<button class="send-mail btn" type="submit">Отправить</button>
+        	</div>
+
+        </form>
+    </div>
+ -->
+
+
+<div class="modal-write map-popup">
+	<button class="modal-close" type="button"></button>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.1898431367896!2d30.32281709519088!3d59.938639343398236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460921418112"
+                width="940" height="448" frameborder="0" style="border:0" allowfullscreen>
+              </iframe>
+	
+</div>
+
+<!-- end модальные окна -->
+
 		</body>
 	</html>
