@@ -209,7 +209,7 @@ img {
 	font-weight: normal;
 	font-size: var(--font-size-l);
 	line-height: 21px;
-	color var(--black);
+	color: var(--black);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1105,15 +1105,9 @@ hr {
 	height: 261px;
 	background-color: var(--white-gray);
 	margin: 0 auto;
-}
-
-.text-perf h4 {
 	padding-top: 64px;
 	padding-left: 130px;
-}
-
-.text-perf p {
-	padding-left: 130px;
+	box-sizing: border-box;
 }
 
 .catalog-list-1 {
