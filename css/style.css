@@ -215,59 +215,46 @@ img {
 	align-items: center;
 }
 
-.account span::before {
+.account span:hover::before  {
 	content: "";
-	position: absolute;
+	background: url(../img/icon-user-ac.svg)  no-repeat;}
+
+.account span::before,
+.account span:active::before {
+	content: "";
+	background: url(../img/icon-user.svg)  no-repeat;
+}
+
+.account span::before,
+.account span:hover::before,
+.account span:active::before {
+ 	position: absolute;
 	top: 11px;
 	left: 15px;
 	width: 20px;
 	height: 18px;
-	background: url(../img/icon-user.svg)  no-repeat;}
+}
 
-.account span::after {
-	content: "";
+.account span::after,
+.account span:hover::after,
+.account span:active::after {
 	position: absolute;
 	top: 13px;
 	left: 262px;
 	width: 20px;
-	height: 18px;
-	background: url(../img/icon-logout.svg)  no-repeat;}
-
-.account span:hover::before  {
-	content: "";
-	position: absolute;
-	top: 11px;
-	left: 15px;
-	width: 20px;
-	height: 18px;
-	background: url(../img/icon-user-ac.svg)  no-repeat;}
+	height: 18px;	
+}
 
 .account span:hover::after {
 	content: "";
-	position: absolute;
-	top: 13px;
-	left: 262px;
-	width: 20px;
-	height: 18px;
-	background: url(../img/icon-login-active.svg)  no-repeat;}
+	background: url(../img/icon-login-active.svg)  no-repeat;
+}
 
-.account span:active::before  {
-	content: "";
-	position: absolute;
-	top: 11px;
-	left: 15px;
-	width: 20px;
-	height: 18px;
-	background: url(../img/icon-user.svg)  no-repeat;}
-
+.account span::after,
 .account span:active::after {
 	content: "";
-	position: absolute;
-	top: 13px;
-	left: 262px;
-	width: 20px;
-	height: 18px;
-	background: url(../img/icon-logout.svg)  no-repeat;}
+	background: url(../img/icon-logout.svg)  no-repeat;
+}
 
 .logged-in-account {
 	width: 299px;
