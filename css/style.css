@@ -1605,8 +1605,6 @@ footer a:active {
 /*модальное окно добавлено в корзину*/
 
 
-
-/*.modal-add,*/
 .modal-write {
 	position: absolute;
 	left: 200px;
@@ -1634,8 +1632,9 @@ footer a:active {
 	justify-content: flex-start;
 	padding-top: 55px;
 	box-sizing: border-box;
-	background-color: var(--white);}
-
+	background-color: var(--white);
+	position: relative;
+}
 .map-popup {
 	width: 943px;
 	height: 449px;
@@ -1643,9 +1642,30 @@ footer a:active {
 	margin:0;
 }
 
+.total-for-icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 439px;
+	height: 66px;
+}
+
+.add-to-cart {
+	font-family: Cuprum;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.add-to-cart,
+.icon {
+	position: absolute;
+}
 
 .icon{
-	font-weight: bold;
+	/*font-weight: bold;*/
 	float: left;
 	display: flex;
 	justify-content: flex-start;
@@ -1653,9 +1673,14 @@ footer a:active {
 	margin-left: 81px;
 }
 
-.icon img {
-	margin-right: 30px;
+.icon {
+	background-image: url(../img/icon-mark.svg);
+	/*margin-right: 30px;*/
 }
+
+/*.icon img {
+	margin-right: 30px;
+}*/
 
 .add-button {
 	width: 620px;
