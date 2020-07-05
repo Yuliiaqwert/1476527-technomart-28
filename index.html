@@ -64,6 +64,7 @@
 					<main>
 						<h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 						<section class="theme">
+
 							<div class="materials">
 								<div class="materials-left">
 									<h2>Материалы</h2>
@@ -71,6 +72,7 @@
 								</div>
 								<img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
 							</div>
+
 							<div class="tools">
 								<div class="materials-left">
 									<h2>Инструмент</h2>
@@ -78,6 +80,7 @@
 								</div>
 								<img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
 							</div>
+
 							<div class="technics">
 								<div class="materials-left">
 									<h2>Скидки 50%</h2>
@@ -85,6 +88,7 @@
 								</div>
 								<img src="img/icon-4.svg" width="59" height="72" alt="Корзина">
 							</div>
+
 							<article class="gallery">
 								<div class="gallery-1">
 									<div class="gallery-box">
@@ -106,7 +110,9 @@
 								<h6><a class="catalog btn" href="catalog.html"> открыть каталог</a></h6>
 								
 							</article>
+
 							<div class="materials-right">
+
 								<div class="discounts">
 									<div class="materials-left">
 										<h2>Скидки 50%</h2>
@@ -114,6 +120,7 @@
 									</div>
 									<img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
 								</div>
+
 								<div class="delivery">
 									<div class="materials-left">
 										<h2>Доставка</h2>
@@ -177,14 +184,14 @@
 							</div>
 
 							<ul class="top-catalog-list-3">
-									<li><img src="img/bosch.png" width="126" height="37"></li>
-									<li><img src="img/makita.png" width="123" height="40"></li>
-									<li><img src="img/dewalt.png" width="146" height="44"></li>
-									<li><img src="img/interscol.png" width="200" height="88"></li>
-									<li><img src="img/hitachi.png" width="169" height="31"></li>
-									<li><img src="img/lg.png" width="121" height="73"></li>
-									<li><img src="img/aeg.png" width="151" height="96"></li>
-									<li><img src="img/metabo.png" width="204" height="69"></li>
+									<li><img src="img/bosch.png" width="126" height="37" alt="Bosch"></li>
+									<li><img src="img/makita.png" width="123" height="40" alt="makita"></li>
+									<li><img src="img/dewalt.png" width="146" height="44" alt="dewalt"></li>
+									<li><img src="img/interscol.png" width="200" height="88" alt="Интерскол"></li>
+									<li><img src="img/hitachi.png" width="169" height="31" alt="hitachi"></li>
+									<li><img src="img/lg.png" width="121" height="73" alt="lg"></li>
+									<li><img src="img/aeg.png" width="151" height="96" alt="aeg"></li>
+									<li><img src="img/metabo.png" width="204" height="69" alt="metabo"></li>
 							</ul>
 
 						</section>
@@ -314,55 +321,34 @@
 				
 			</footer>
 
-<!-- модальные окна -->
+<!-- модальное окно "Напишите нам" -->
+				<div class="modal-write">
+	 				<button class="modal-close" type="button"></button>
+        			<form class="write-us1" action="#" method="post">
 
-<!-- 		<div class="modal-add modal-write">
-   			<button class="modal-close" type="button"></button>
-          	<div class="icon">
-          		<img src="img/icon-mark.svg">
-        		<span> Товар добавлен в корзину!</span>
-        	</div>
+        				<label>
+        					<span>Ваше имя:</span><br>
+        					<input type="text" name="login" placeholder="Имя, фамилия">
+        				</label>
 
-     		<div class="add-button">
-       			<a class="button-pay btn" href="#ordering">Оформить заказ</a>
-       			<a class="button-next btn-nonactive" href="#">Продолжить Покупки</a>
-     		</div>
-        </div> -->
+        				<label>
+        					<span>Ваш e-mail:</span><br>
+        					<input type="text" name="email" placeholder="email@example.com"> 
+        				</label>
+	
+        				<label><span>Текст письма:</span>
+        		        	<textarea name="textletter" cols="10" rows="6" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea> 
+        				</label>
 
+        				<div class="form-btn">
+        					<button class="send-mail btn" type="submit">Отправить</button>
+        				</div>
 
-<!-- <div class="modal-write">
-	 	<button class="modal-close" type="button"></button>
-        <form class="write-us1" action="#" method="post">
-        	
-
-        		<label>
-        			<span>Ваше имя:</span><br>
-        			<input type="text" name="login" placeholder="Имя, фамилия">
-        	
-        		</label>
-
-        		<label>
-        			<span>Ваш e-mail:</span><br>
-        			<input type="text" name="email" placeholder="email@example.com"> 
-        		</label>
-
-        		<label><span>Текст письма:</span>
-        		
-        		
-        		        		<textarea name="textletter" cols="10" rows="6" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea> 
-        		</label>
-        	
+        			</form>
+    			</div>
 
 
-        	<div class="form-btn">
-        		<button class="send-mail btn" type="submit">Отправить</button>
-        	</div>
-
-        </form>
-    </div>
- -->
-
-
+<!--модальное окно карты Питера -->
 <div class="modal-write map-popup">
 	<button class="modal-close" type="button"></button>
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.1898431367896!2d30.32281709519088!3d59.938639343398236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460921418112"
@@ -371,7 +357,6 @@
 	
 </div>
 
-<!-- end модальные окна -->
 
 		</body>
 	</html>

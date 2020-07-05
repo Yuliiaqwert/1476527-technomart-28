@@ -1643,12 +1643,23 @@ footer a:active {
 }
 
 .total-for-icon {
-	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	width: 439px;
+	width: 360px;
 	height: 66px;
+	margin-left: 81px;
+	box-sizing: border-box;
+}
+
+.icon {
+	width: 66px;
+	height: 66px;
+	float: left;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url(../img/icon-mark.svg);
 }
 
 .add-to-cart {
@@ -1658,29 +1669,6 @@ footer a:active {
 	font-size: 24px;
 	line-height: 30px;
 }
-
-.add-to-cart,
-.icon {
-	position: absolute;
-}
-
-.icon{
-	/*font-weight: bold;*/
-	float: left;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	margin-left: 81px;
-}
-
-.icon {
-	background-image: url(../img/icon-mark.svg);
-	/*margin-right: 30px;*/
-}
-
-/*.icon img {
-	margin-right: 30px;
-}*/
 
 .add-button {
 	width: 620px;
