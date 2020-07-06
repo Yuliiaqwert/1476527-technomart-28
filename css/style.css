@@ -39,6 +39,9 @@ a {
 	--gray-dark2: #405069;
 	--icon-enter: #3D546F;
 	--gray-green: #63A63E;
+	--pay-green: #367315;
+	--hover-green: #5FBB2D;
+	--active-green: #518534;
 	--white-gray: #F2F6F8 /*rgba(0, 0, 0, 0.0001)*/;
 	--orange: #FFBF47;
 	--bluе: #3BBCE3;
@@ -584,6 +587,7 @@ h6 a {
 	left: 24px;
 }
 
+
 .arrow-forward {
 	position: absolute;
 	top: 122px;
@@ -596,7 +600,8 @@ h6 a {
 	left: 24px;
 }
 
-.gallery {
+.gallery,
+.gallery-2 {
 	position: relative;
 	align-self: flex-end;
 }
@@ -747,7 +752,8 @@ h6 a {
 	align-items: center;
 }
 
-.catalog-item {
+.catalog-item,
+.catalog-item-selected {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -1598,19 +1604,24 @@ footer a:active {
 	.btn-nonactive:hover{outline: 1px solid var(--gray-light-2);}
 	.btn-nonactive:active{outline: 1px solid var(--red-click);}
 
-/*стиль для неактивной кнопки модального окна*/	
+/*модальные окна (карта, добавлено в корзину, напишите нам)*/
 
-
-
-/*модальное окно добавлено в корзину*/
-
+.modal-write,
+.modal-add,
+.map-popup {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	bottom: auto;
+	display: none; /*не работает*/
+}
 
 .modal-write {
+	top: 2377px;
 	position: absolute;
-	left: 200px;
-	top: 500px;
 	width: 620px;
-	margin: auto;
 	border-top:7px solid var(--red-light);
 	font-size: 24px;
 	font-family: Cuprum;
@@ -1625,6 +1636,7 @@ footer a:active {
 }
 
 .modal-add {
+	top: 655px;
 	padding-left: 0px;
 	height: 282px;
 	display: flex;
@@ -1633,13 +1645,17 @@ footer a:active {
 	padding-top: 55px;
 	box-sizing: border-box;
 	background-color: var(--white);
-	position: relative;
 }
+
+
 .map-popup {
+	top: 2377px;
 	width: 943px;
 	height: 449px;
 	padding: 0;
-	margin:0;
+}
+.map-popup iframe {
+	border: none;
 }
 
 .total-for-icon {
@@ -1718,9 +1734,52 @@ footer a:active {
 	margin-left:10px;
 }
 
+/*модальное окно карточки товара при hover*/
+
+.button-pay-green {
+	width: 135px;
+	height: 38px;
+	font-family: Cuprum;
+	font-size: var(--font-size-s);
+	line-height: var(--line-height-s);
+	text-transform: uppercase;
+}
+.pay-green {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: var(--gray-green);
+	border-bottom: 3px var(--pay-green); 
+	border-radius: 2px; 
+	box-shadow: inset 0px -3px 0px var(--pay-green);
+	color: var(--white);
+	margin: 38px 44px 0 41px;
+	
+}
+.bookmark-green {
+	background-color: var(--white);
+	border: 3px solid var(--gray-green);
+	border-radius: 2px; 
+	color: var(--gray);
+	margin: 10px 44px auto 41px;
+}	
+.pay-green img {
+	margin-right: 10px;
+	margin-left: 30px;
+	opacity: 0.3;
+}
+
+.pay-green a {color: var(--white);}
+.pay-green:hover {background-color: var(--hover-green);}
+.bookmark-green:hover {border: var(--gray) 3px solid;}
+.pay-green:active {background-color: var(--active-green);}
+.bookmark-green:active {
+	border: var(--gray) 3px solid;
+	opacity: 0.5
+}
+
 /* end модальное окно добавлено в корзину*/
-
-
 .modal-write input {
 	width: 220px;
 	height: 38px;
