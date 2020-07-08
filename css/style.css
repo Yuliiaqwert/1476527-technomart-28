@@ -470,9 +470,7 @@ h2 {
 }
 
 h3 {
-	position: absolute;
-	margin-top: 25px;
-	margin-left: 24px;
+	margin-top: -25px;
 	font-family: Cuprum;
 	font-weight: bold;
 	font-size: 36px;
@@ -480,6 +478,7 @@ h3 {
 	align-items: center;
 	text-transform: uppercase;
 	color: var(--white);
+	margin: 0;
 }
 
 h4 {
@@ -515,11 +514,125 @@ h6 {
 	padding: 0;
 }
 
-h6 a {
-	color: var(--white);
-}
 
 /*Gallery*/
+
+.gallery .arrow-left::before {
+    content: "";
+   	position: absolute;
+    z-index: 10;
+    left: 24px;
+    top: 114px;
+    cursor: pointer;
+    width: 22px;
+    height: 40px;
+    background: url("../img/icon-left.svg") no-repeat;
+}
+
+.gallery .arrow-right::before {
+    content: "";
+    position: absolute;
+    z-index: 20;
+    right: 20px;
+    top: 114px;
+    display: block;
+    width: 22px;
+    height: 40px;
+    background: url("../img/icon-right.svg") no-repeat;
+    cursor: pointer;
+}
+
+.gallery {
+    position: relative;
+    width: 620px;
+    height: 266px;
+	align-self: flex-end;
+}
+
+.button-gallery {
+margin-top: 120px;
+	width: 192px;
+	height: 38px;
+}
+
+.gallery input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.gallery-controls {
+    position: absolute;
+    z-index: 60;
+    bottom: 14%;
+    left: 45%;
+    width: 60px;
+    height: 10px;
+    text-align: center;
+}
+
+.gallery-controls label {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+    vertical-align: top;
+    background: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#btn-1:checked ~ .gallery-controls label[for="btn-1"],
+#btn-2:checked ~ .gallery-controls label[for="btn-2"] {
+    background: #ee3643;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-text {
+    margin-left: 24px;
+    padding-top: 26px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: var(--white);
+    background: transparent;
+}
+
+
+.slide:nth-child(1) {
+    background-image: url("../img/Layer-99.jpg");
+    background-repeat: no-repeat;
+}
+
+
+.slide:nth-child(2) {
+    background-image: url("../img/slider2.jpg");
+    background-repeat: no-repeat;
+}
+
+.slide {
+    display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+
 .theme {
 	width: 940px;
 	height: 409px;
@@ -555,77 +668,6 @@ h6 a {
 	justify-content: space-between;
 	width: 300px;
 	height: 266px;
-}
-
-.gallery-1 {
-	background-image: url(../img/Layer-99.jpg);
-	width: 620px;
-	height: 266px;
-}
-
-.gallery-2 {
-	background-image: url(../img/Layer-100.jpg);
-	width: 620px;
-	height: 266px;
-}
-.next-gallery-1 {
-	background-image: url(../img/Layer-99-2.jpg);
-	width: 620px;
-	height: 266px;
-}
-
-.gallery-box {
-	position: absolute;
-	width: 620px;
-	height: 104px;
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.arrow-back {
-	position: absolute;
-	top: 122px;
-	left: 24px;
-}
-
-
-.arrow-forward {
-	position: absolute;
-	top: 122px;
-	left: 578px;
-}
-
-.catalog {
-	position: absolute;
-	top: 201px;
-	left: 24px;
-}
-
-.gallery,
-.gallery-2 {
-	position: relative;
-	align-self: flex-end;
-}
-
-.gallery p {
-	position: absolute;
-	font-family: Cuprum;
-	font-size: var(--font-size-m);
-	line-height: var(--line-height-m);
-	color: var(--white);
-	margin-left: 24px;
-	margin-top: 65px;
-}
-
-.catalog a:hover {
-	background-color: var(--red-light);
-}
-
-.catalog a:active {
-	background-color: var(--red-click);
-}
-
-.catalog:active {
-	background-color: var(--red-click);
 }
 
 .materials,
@@ -700,6 +742,13 @@ h6 a {
 	line-height: var(--line-height-m);
 	color: var(--black);
 }
+.index-column p {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+.text-perf p {
+	margin-top: 30px;
+}
 
 .button {
 	font: inherit;
@@ -752,8 +801,9 @@ h6 a {
 	align-items: center;
 }
 
-.catalog-item,
-.catalog-item-selected {
+.catalog-item
+{
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -763,6 +813,20 @@ h6 a {
 	border: 2px solid var(--border);
 	text-align: center;
 	list-style: none;
+}
+
+.catalog-item-selected {
+	background-color: var(--white);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 220px;
+	height: 153px;
+	display: none;
+}
+
+.catalog-item-selected-show {
+	display: block;
 }
 
 .top-catalog-list-2 {
@@ -809,15 +873,6 @@ h6 a {
 	width: 940px;
 	margin: 20px auto 70px auto;
 	padding: 0;
-}
-
-.catalog-item-selected {
-	float: left;
-	margin: 20px;
-	width: 220px;
-	height: 318px;
-	border: 2px solid var(--border);
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .catalog-item span,
@@ -1021,7 +1076,7 @@ hr {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	height: 370px;
+	height: 356px;
 	margin: auto;
 	color: var(--black);
 	background-color: var(--white);
@@ -1029,17 +1084,23 @@ hr {
 
 .company {
 	display: flex;
+	justify-content: flex-start;
 	flex-direction: column;
 	width: 528px;
-	height: 370px;
+	height: 356px;
 }
 
 .contacts {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	width: 300px;
-	height: 370px;
+	height: 356px;
+}
+
+.contacts img {
+	margin: 8px 0 25px 0;
+	display: block;
 }
 
 .transport {
@@ -1050,6 +1111,7 @@ hr {
 	font-family: "Cuprum","Arial",sans-serif;
 	font-size: 18px;
 	line-height: 40px;
+	margin: -30px 0 5px 0;
 }
 
 .transport,.transport li {
@@ -1354,7 +1416,8 @@ footer a:active {
 	width: 940px;
 }
 
-.service h4 {
+.service h4,
+.index-column h4 {
 	margin-bottom: 24px;
 }
 
@@ -1606,22 +1669,10 @@ footer a:active {
 
 /*модальные окна (карта, добавлено в корзину, напишите нам)*/
 
-.modal-write,
-.modal-add,
-.map-popup {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
-	bottom: auto;
-	display: none; /*не работает*/
-}
-
 .modal-write {
-	top: 2377px;
-	position: absolute;
+	top: 200px;
 	width: 620px;
+	height: 430px;
 	border-top:7px solid var(--red-light);
 	font-size: 24px;
 	font-family: Cuprum;
@@ -1647,12 +1698,23 @@ footer a:active {
 	background-color: var(--white);
 }
 
-
 .map-popup {
 	top: 2377px;
 	width: 943px;
 	height: 449px;
 	padding: 0;
+}
+
+.modal-write,
+.modal-add,
+.map-popup {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	display: none; 
 }
 .map-popup iframe {
 	border: none;
@@ -1695,6 +1757,30 @@ footer a:active {
 	justify-content: flex-start;
 }
 
+/*открытие модальных окон и эффекты */
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal-close::after,
 .modal-close::before {
 	content:'';
@@ -1710,8 +1796,32 @@ footer a:active {
 	border: none;}
 
 .modal-close {
-	padding:0;
-	border:none}
+	display: block;
+	padding:0px;
+	border:none;
+ animation: shake 0.6s;}
+
+ @keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 .modal-close::after{-webkit-transform:rotate(45deg);
 	transform:rotate(45deg)}
@@ -1748,15 +1858,25 @@ footer a:active {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	background-color: var(--gray-green);
 	border-bottom: 3px var(--pay-green); 
 	border-radius: 2px; 
 	box-shadow: inset 0px -3px 0px var(--pay-green);
 	color: var(--white);
 	margin: 38px 44px 0 41px;
-	
 }
+
+.pay-green::before {
+	content: "";
+	position: relative;
+	top: -2px;
+	left:-8px;
+	width: 15px;
+	height: 15px;
+	background: url(../img/icon-cart.svg) no-repeat;
+}
+
 .bookmark-green {
 	background-color: var(--white);
 	border: 3px solid var(--gray-green);
@@ -1781,6 +1901,7 @@ footer a:active {
 
 /* end модальное окно добавлено в корзину*/
 .modal-write input {
+	display: block;
 	width: 220px;
 	height: 38px;
 	box-sizing: border-box;
@@ -1791,7 +1912,7 @@ footer a:active {
 	color:#999;
 	background: var(--white);
 	border:1px solid #999;
-	border-radius:3px
+	border-radius:3px;
 }
 
 .modal-write span {
