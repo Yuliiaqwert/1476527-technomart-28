@@ -13,12 +13,6 @@ var button_next = document.querySelector('.button-next');
 
 var len_green = add_open.length; //длина массива
 
-
-
-// console.log (add_open);
-// console.log (len_green);
-// console.log (add_close);
-
 //открытие модального окна добавлено в корзину
 
 if (add_open) { //если окно карточки по наведению открыто
@@ -46,23 +40,14 @@ button_next.onclick=function(evt) {
 }}
 
 
-
-
-
-
-
-
-
-// var modal_write = document.querySelector('.modal-write');
 var modal_write = document.querySelector('div[class="modal-write"]');
 
-console.log (modal_write);
+
 
 
 var write_open = document.querySelector('.write-us');
 var write_close = document.querySelector('#writeid');
 
-console.log (write_close );
 
 if (write_open) {
 write_open.onclick=function (evt) {
@@ -98,9 +83,6 @@ var modal_buy = document.querySelectorAll('.catalog-item');
 var modal_buy_show = document.querySelectorAll('.catalog-item-selected');	
 
 var lengh=modal_buy.length;
-//console.log (lengh);
-
-
 
 
 for (let i = 0; i < lengh; i++) {
