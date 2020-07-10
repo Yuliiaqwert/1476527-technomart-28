@@ -313,6 +313,15 @@ img {
 	text-align: center;
 }
 
+.pay:hover {
+		background-color: var(--hover-green);
+}
+
+.pay:active {
+	background-color: var(--gray-green);
+	color: rgba(255,255,255,0.5);
+}
+
 .account {
 	position: relative;
 	width: 299px;
@@ -357,8 +366,8 @@ img {
 .profile:hover::before,
 .profile:active::before {
  	position: absolute;
-	top: 11px;
-	left: 15px;
+	top: 12px;
+	left: 20px;
 	width: 20px;
 	height: 18px;
 }
@@ -1962,7 +1971,11 @@ footer a:active {
 	display: block;
 	padding:0px;
 	border:none;
- 	animation: shake 0.6s;}
+}
+
+.modal-error {
+ 	animation: shake 0.6s;
+}
 
  @keyframes shake {
   0%,
