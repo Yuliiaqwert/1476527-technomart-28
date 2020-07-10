@@ -127,6 +127,7 @@ img {
 	justify-content: flex-start;
 	line-height: 42px;
 	margin: 0px auto;
+	box-sizing: border-box;
 }
 .logo a {
 	display: flex;
@@ -169,26 +170,77 @@ img {
 
 .search {
 	position: relative;
-	width: 223px;
-	padding-left: 16px;
+	width: 271px;
 	color: var(--white);
-	margin-left: 25px;
 }
+
 
 .search::before {
 	content: "";
  	position: absolute;
 	top: 12px;
-	left: -8px;
+	left: 14px;
 	width: 17px;
 	height: 17px;
-	background: url(../img/icon-search.svg) no-repeat;
+	background: url(../img/icon-search1.svg) no-repeat;
+	opacity: 0.4;
+}
+
+
+.search input:focus + label::before {
+	content: "";
+ 	position: absolute;
+	top: 12px;
+	left: 14px;
+	width: 17px;
+	height: 17px;
+	background: url(../img/icon-search-red.svg) no-repeat;
+	color: var(--black);
+}
+
+
+.search input:active + label::before {
+		content: "";
+ 	position: absolute;
+	top: 12px;
+	left: 14px;
+	width: 17px;
+	height: 17px;
+	background: url(../img/icon-search1.svg) no-repeat;
+	color: var(--white);
 }
 
 .search input {
 	background-color: var(--gray-dark);
-	border: 0px;
+	border: none;
+	height: 42px;
+	width: 271px;
+	padding-left: 40px;
 	outline: none;
+	box-sizing: border-box;
+	
+}
+
+.search input::placeholder {
+	color: var(--white);
+}
+.search input:focus::placeholder {
+
+	color: var(--black);
+}
+
+.search input:active::placeholder {
+
+	color: var(--white);
+	opacity: 0.4;
+}
+.search input:focus {
+	background-color: var(--white);
+	color: var(--black);
+}
+.search input:active {
+	background-color:  var(--gray-dark);
+	color: var(--white);
 }
 
 .bookmark {
@@ -196,18 +248,18 @@ img {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	width: 182px;
-	padding-left: 10px;
+	width: 163px;
+	padding-left: 18px;
 	text-align: center;
 	border-right: 1px solid var(--gray-dark);
+	box-sizing: border-box;
 }
-
 
 .bookmark::before {
 	content: "";
  	position: absolute;
-	top: 12px;
-	left: 30px;
+	top: 13px;
+	left: 26px;
 	width: 15px;
 	height: 16px;
 	background: url(../img/icon-bookmark.svg) no-repeat;
@@ -219,16 +271,17 @@ img {
 	justify-content: center;
 	align-items: center;
 	width: 136px;
-	padding-left: 25px;
+	padding-left: 15px;
 	position: relative;
 	height: 42px;
+	box-sizing: border-box;
 }
 
 .basket::before {
 	content: "";
  	position: absolute;
 	top: 12px;
-	left: 28px;
+	left: 16px;
 	width: 15px;
 	height: 15px;
 	background: url(../img/icon-cart.svg) no-repeat;
@@ -236,14 +289,16 @@ img {
 }
 
 .basket:hover::before,
-.bookmark:hover::before {
+.bookmark:hover::before,
+.search:hover::before {
 	opacity: 1;
 }
 
 .basket:active::before,
 .bookmark:active::before,
 .bookmark a:active,
-.basket a:active {
+.basket a:active,
+.search:active::before {
 	opacity: 0.5;
 }
 
@@ -1059,6 +1114,7 @@ h6 {
 	align-items: center;
 	margin-bottom: 8px;
 	box-sizing: border-box;
+	position: relative;
 }
 
 .filter output {
@@ -1441,8 +1497,6 @@ footer a:active {
 	height: 107px;
 	margin: 0 auto;
 }
-
-
 
 .footer-bottom p {
 	font-family: Cuprum;
@@ -2074,5 +2128,75 @@ footer a:active {
 	text-decoration:none;
 	border-radius:3px;
 	border:none;
-	font-family: Cuprum;}
+	font-family: Cuprum;
+}
+
+input[type=range]::before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 18px;
+  	border: 0px;
+  	height: 22px;
+  	width: 21px;
+  	cursor: pointer;
+    background: url(../img/filter-button1.svg);
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+ 	width: 180px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type=range]:focus {
+	outline: none; }
+
+input[type=range] {
+  	-webkit-appearance: none;
+  	background-color: var(--red-gray);
+}
+ 
+input[type=range]::-webkit-slider-thumb {
+ 	-webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  	margin-top: -10px;
+  	-webkit-appearance: none;
+ 	height: 22px;
+  	width: 21px;
+  	background: var(--white);
+  	cursor: pointer;
+  	background: url(../img/filter-button1.svg);
+}
+ 
+
+input[type=range]::-webkit-slider-runnable-track {
+  	width: 80px;
+ 	height: 2px;
+  	cursor: pointer;
+  	background: #70B86C;
+  	border: 0;
+}
+
+/* Тоже самое для Firefox */
+input[type=range]::-moz-range-thumb {
+ 	border: 0px;
+  	height: 22px;
+  	width: 21px;
+  	cursor: pointer;
+    background: url(../img/filter-button1.svg);
+}
+
+input[type=range]::-moz-range-track {
+  	cursor: pointer;
+ 	 width: 180px;
+  	height: 2px;
+  	cursor: pointer;
+  	background: #70B86C;
+}
 
