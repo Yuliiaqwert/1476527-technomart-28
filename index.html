@@ -358,19 +358,19 @@
 				<!-- модальное окно "Напишите нам" -->
 				<div class="modal-write modal-write-us">
 					<h6 class="visually-hidden">заблудились? напишите нам!</h6>
-					<button id="writeid" class="modal-close" type="button" aria-label="Закрыть"></button>
+					<button id="writeid" class="modal-close write-js" type="button" aria-label="Закрыть"></button>
 					<form class="write-us1" action="https://echo.htmlacademy.ru" method="post">
 						<label>
 							<span>Ваше имя:</span><br>
-							<input type="text" name="login" placeholder="Имя, фамилия">
+							<input class="login-js" type="text" name="login" placeholder="Имя, фамилия">
 						</label>
 						<label>
 							<span>Ваш e-mail:</span><br>
-							<input type="text" name="email" placeholder="email@example.com">
+							<input class="email-js" type="text" name="email" placeholder="email@example.com">
 						</label>
 						
 						<label><span>Текст письма:</span>
-						<textarea name="textletter" cols="10" rows="6" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
+						<textarea class="textletter-js" name="textletter" cols="10" rows="6" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
 					</label>
 					<div class="form-btn">
 						<button class="send-mail btn" type="submit">Отправить</button>
