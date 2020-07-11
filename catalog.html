@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    
 
 </head>
 
@@ -22,8 +22,8 @@
                         <a href="index.html">ТEХНОМАРТ</a>
                     </div>
                     <div class="search">
-                        <form action="" method="post">
-                            <input type="text" name="search1" placeholder="Поиск:">
+                        <form action="https://echo.htmlacademy.ru" method="post">
+                            <input type="text" name="search" id="search1" placeholder="Поиск:">
                             <label for="search1"></label>
                         </form>
                     </div>
@@ -52,7 +52,7 @@
 
             <div class="telefon">
                 <img src="img/icon-phone.svg" width="19" height="19" alt="телефон">
-                <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                <a href="+78125550555">+7 (812) 555-05-55</a>
                 <p class="t-address">г.Санкт-Петербург, ул. Конюшенная, д. 19/8 </p>
             </div>
 
@@ -60,14 +60,14 @@
             <div class="account">
 
                 <span>
-                  <a class="profile" href="#profile">Равшан Джамшутович
+                  <a class="profile" href="#profile">Равшан Джамшутович</a>
                   <a class="logout" href="#logout"></a>
                 </span>
 
 
                 <div class="logged-in-account">
                     <a href="blank.html">Мои заказы</a>
-                    <img src="img/dot.svg" width="3.97" height="3.97">
+                    <img src="img/dot.svg" width="4" height="4" alt="разделитель">
                     <a href="blank.html">Личный кабинет</a>
                 </div>
             </div>
@@ -93,11 +93,11 @@
 
             <a href="index.html">
               <img src="img/icon-home.svg" width="14" height="12" alt="На главную"></a>
-            <img src="img/bread-right.svg" alt="next page">
+            <img src="img/bread-right.svg" width="8" height="12" alt="next page">
             <a href="catalog.html">Каталог</a>
-            <img src="img/bread-right.svg" alt="next page">
+            <img src="img/bread-right.svg" width="8" height="12" alt="next page">
             <a href="blank.html">Инструмент</a>
-            <img src="img/bread-right.svg" alt="next page">
+            <img src="img/bread-right.svg" width="8" height="12" alt="next page">
             <a href="blank.html">Перфораторы</a>
 
         </section>
@@ -107,19 +107,21 @@
         <section class="filter">
             <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" oninput="max1.value=price.value">
                 <p>фильтр</p>
-                <label name="price" alf="Выбор цены">
+                
                   <span>цена</span>
                   <div class="filter-form">
+                    <label alt="Выбор цены">
                     <input type="range" name="price" min="0" max="33000" value="30000">
+                    </label>
                   </div>
                   <div class="output-value">
                     <output name="min1">0</output>
                     
-                    <img src="img/—.svg">
+                    <img src="img/separator.svg" width="10" height="5" alt="тирэ">
                     
                     <output name="max1">30000</output>
                   </div>
-                </label>
+                
                 <hr>
                 <div class="filter-block">
                     <span>ПРОИЗВОДИТЕЛИ:</span>
@@ -175,7 +177,7 @@
             </section>
             <ul>
                 <li class="catalog-item">
-                    <div class="image"><img src="img/6000.jpg" width="144" hieght="128" alt="Перфоратор BOSCH BFG 9000"></div>
+                    <div class="image"><img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 6000</h5>
                         <span>30500 р.</span>
@@ -189,7 +191,7 @@
                 </li>
 
                 <li class="catalog-item">
-                    <div class="image"><img src="img/6000.jpg" width="144" hieght="128" alt="Перфоратор BOSCH BFG 6000"></div>
+                    <div class="image"><img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 6000</h5>
                         <span>30500 р.</span>
@@ -202,7 +204,7 @@
                 </li>
 
                 <li class="catalog-item new-mark">
-                    <div class="image"><img src="img/6000.jpg" width="144" hieght="128" alt="Перфоратор BOSCH BFG 6000"></div>
+                    <div class="image"><img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 6000</h5>
                         <span>30500 р.</span>
@@ -215,7 +217,7 @@
                 </li>
 
                 <li class="catalog-item new-mark">
-                    <div class="image"><img src="img/3000.jpg" width="127" hieght="112" alt="Перфоратор BOSCH BFG 3000"></div>
+                    <div class="image"><img src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 3000</h5>
                         <span>22500 р.</span>
@@ -228,7 +230,7 @@
                 </li>
 
                 <li class="catalog-item">
-                    <div class="image"><img src="img/6000.jpg" width="144" hieght="128" alt="Перфоратор BOSCH BFG 6000"></div>
+                    <div class="image"><img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 6000</h5>
                         <span>30500 р.</span>
@@ -241,7 +243,7 @@
                 </li>
 
                 <li class="catalog-item new-mark">
-                    <div class="image"><img src="img/2000.jpg" width="127" hieght="112" alt="Перфоратор BOSCH BFG 2000"></div>
+                    <div class="image"><img src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 2000</h5>
                         <button class="button-card btn">12500 р.</button>
@@ -253,7 +255,7 @@
                 </li>
 
                 <li class="catalog-item new-mark">
-                    <div class="image"><img src="img/3000.jpg" width="127" hieght="112" alt="Перфоратор BOSCH BFG 3000"></div>
+                    <div class="image"><img src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 3000</h5>
                         <span>22500 р.</span>
@@ -266,7 +268,7 @@
                 </li>
 
                 <li class="catalog-item">
-                    <div class="image"><img src="img/6000.jpg" width="144" hieght="128" alt="Перфоратор BOSCH BFG 6000"></div>
+                    <div class="image"><img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 6000</h5>
                         <span>30500 р.</span>
@@ -279,7 +281,7 @@
                 </li>
 
                 <li class="catalog-item new-mark">
-                    <div class="image"><img src="img/2000.jpg" width="127" hieght="112" alt="Перфоратор BOSCH BFG 2000"></div>
+                    <div class="image"><img src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></div>
                     <div class="card-bottom">
                         <h5>Перфоратор BOSCH<br> BFG 2000</h5>
                         <button class="button-card btn">12500 р.</button>
@@ -289,14 +291,14 @@
                         </div>
                     </div>
                 </li>
-
+</ul>
                 <div class="pagination">
                     <a class="btn1 check" href="blank.html">1</a>
                     <a class="btn1 uncheck-button" href="blank.html">2</a>
                     <a class="btn1 uncheck-button" href="blank.html">3</a>
                     <a class="btn2 uncheck-button" href="blank.html">СЛЕДУЮЩАЯ</a>
                 </div>
-            </ul>
+            
         </section>
 
 
@@ -352,7 +354,7 @@
                     <p>Все права защищены.</p>
                 </div>
                 <div class="end-2">
-                    <div class="social-item"><img src="img/icon-vk.svg" width="25.05" height="14.06" alt="Мы ВКонтакте"></div>
+                    <div class="social-item"><img src="img/icon-vk.svg" width="25" height="14" alt="Мы ВКонтакте"></div>
                     <div class="social-item"><img src="img/icon-fb.svg" width="12" height="22" alt="Мы в Facebook"></div>
                     <div class="social-item"><img src="img/icon-insta.svg" width="21" height="21" alt="Мы в Instagram"></div>
                 </div>
