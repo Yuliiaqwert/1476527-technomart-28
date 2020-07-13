@@ -124,6 +124,7 @@ for (let i = 0; i < lengh; i++) {
     modal_buy[i].onmouseover = function() {
         modal_buy_show[i].classList.add('catalog-item-selected-show');
  }
+
     modal_buy[i].onmouseout = function() {
         modal_buy_show[i].classList.remove('catalog-item-selected-show');
     }   
