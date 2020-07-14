@@ -2,7 +2,7 @@ a {
 	text-decoration: none;
 }
 
-/**:focus {border: 0; outline: 0;}*/
+
 
 .visually-hidden {
 	position: absolute;
@@ -568,8 +568,6 @@ max-width: 210px;}
 	color: var(--gray-active);
 }
 
-
-/* main-navigation*/
 .main-navigation {
 	box-sizing: border-box;
 	width: 940px;
@@ -616,7 +614,7 @@ max-width: 210px;}
 	color: var(--white);
 	opacity: 0.5;
 }
-/*Service, index-column*/
+
 h2 {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: bold;
@@ -674,8 +672,6 @@ h6 {
 	font-weight: normal;
 }
 
-
-/*Gallery*/
 
 .gallery .arrow-left::before {
     content: "";
@@ -1441,7 +1437,6 @@ hr {
 	text-decoration: none;
 	border:0;}
 
-/* блок компания и контакты */
 .index-column {
 	display: flex;
 	justify-content: space-between;
@@ -1713,7 +1708,6 @@ footer a:active {
 		margin-left: 0px;
 }
 
-
 .nav-footer-1 a {
 	color: var(--white);
 }
@@ -1722,9 +1716,6 @@ footer a:active {
 	color: inherit;
 	opacity: 0.5;
 }
-
-
-
 .nav-footer-2 {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: var(--font-size-m);
@@ -1827,8 +1818,6 @@ footer a:active {
 	box-sizing: border-box;
 	border-radius: 50%;
 	margin-top: 2px;
-/*	min-width: 44px;
-	min-height: 44px;*/
 }
 
 .social-item:hover,
@@ -2182,7 +2171,6 @@ footer a:active {
 
 /* модальные окна */
 
-/*стиль для неактивной кнопки модального окна , активная - btn */	
 .btn-nonactive {
 	background-color: var(--white);
 	display: flex;
@@ -2516,7 +2504,6 @@ input[type=range] {
 	-webkit-appearance: none;
  	width: 180px;
  	background-color: var(--red-gray);
-/* 	overflow: hidden;*/
 }
 
 input[type=range]:focus {
